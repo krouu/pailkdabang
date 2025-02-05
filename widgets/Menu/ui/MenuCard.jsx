@@ -2,11 +2,11 @@ import Ingredient from "./Ingredient";
 
 const MenuCard = ({imgSrc, title, comment, ingredient}) => {
     return (  
-        <div style={{position:"relative"}} className="flex flex-col justify-center items-center w-80 h-fit py-5 px-4">
+        <div style={{position:"relative"}} className="group flex flex-col justify-center items-center w-80 h-fit py-5 px-4">
             <img className="w-fit" 
                     src={imgSrc} alt="" />
             <p className="font-semibold">{title}</p>
-            <div style={{position:"absolute", backgroundColor:"rgba(255, 230, 0, 0.8)"}} className="w-full h-full py-3 px-3 flex flex-col justify-between">
+            <div style={{position:"absolute", backgroundColor:"rgba(255, 230, 0, 0.8)"}} className="w-full h-full py-3 px-3 hidden group-hover:flex flex-col justify-between">
                 <div className="flex flex-col gap-2">
                     <h3 className="font-black text-xl">{title}</h3>
                     <div className="w-7 border-b-2 border-black"/>

@@ -39,5 +39,17 @@ export const constants ={
             saturated : "9",
             protein : "8",
         }
+    },{
+        imgSrc : "https://paikdabang.com/wp-content/uploads/2025/01/%EB%B0%A4%ED%8E%98%EC%8A%A4%EC%B8%84%EB%A6%AC_thum-450x588.png",
+        title : "달콤밤페스츄리",
+        comment : "보늬밤과 밤앙금으로 달콤하게 즐기는 페스츄리",
+        ingredient : {
+            caffeine : "0",
+            kcal : "580",
+            sodium : "277",
+            sugar : "90",
+            saturated : "9",
+            protein : "8",
+        }
     }]
 }

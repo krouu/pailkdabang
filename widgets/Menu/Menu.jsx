@@ -11,9 +11,11 @@ const Menu = () => {
             <Banner {...constants.banner.new} />
             <article className="w-full max-w-screen-xl m-auto py-10">
                 <Title title={"신메뉴"} />
-                {constants.Menu.map((v,i)=> (
-                    <MenuCard key={i} {...v} />
-                ))}
+                <div className="grid grid-cols-3 gap-6">
+                    {constants.Menu.map((v,i)=> (
+                        <MenuCard key={i} {...v} />
+                    ))}
+                </div>
             </article>
         </section>
     );

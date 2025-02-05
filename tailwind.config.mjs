@@ -9,6 +9,7 @@ export default {
   ],
   theme: {
     extend: {
+      display: ["group-hover"],
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
