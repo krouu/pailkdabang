@@ -1,6 +1,9 @@
+import Link from "next/link";
 import { constants } from "../data/constants";
 import EtcCard from "./EtcCard";
 import MainCard from "./MainCard";
+import PlusButton from "@/share/btn/PlusButton";
+import ImgCard from "./ImgCared";
 
 const MainBanner = () => {
     return ( 
@@ -12,12 +15,12 @@ const MainBanner = () => {
             </article>
 
             {constants.secondBanner.map((v,i)=>(
-                <MainCard key={i} {...v} />
+                <ImgCard key={i} {...v} />
             ))}
 
             <article className="flex">
                 {constants.thirdBanner.map((v,i)=>(
-                    <MainCard key={i} {...v} />
+                    <ImgCard key={i} {...v} />
                 ))}
             </article>
 
@@ -28,7 +31,7 @@ const MainBanner = () => {
                         ))}
                     </div>
                     {constants.fourBanner.map((v,i)=>(
-                        <MainCard key={i} {...v} />
+                        <ImgCard key={i} {...v} />
                     ))}
             </article>
         </article>
