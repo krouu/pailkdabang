@@ -15,8 +15,8 @@ const PointCard = ({url,title, text1, text2, strongText, text3}) => {
                 <div>
                     <p style={{color:CommonConstants.color.blue}} className="font-black text-2xl pb-3">{title}</p>
                     <div className="text-xl text-slate-600">
-                        <p>{text1}<br/>
-                        {text2}<br />
+                        <p>{text1}</p>
+                        <p>{text2}</p>
                         <em 
                             style={{
                                 color:CommonConstants.color.black,
@@ -25,7 +25,7 @@ const PointCard = ({url,title, text1, text2, strongText, text3}) => {
                             }}
                             className="font-bold"
                         >{strongText}</em>
-                        {text3}</p>
+                        <span>{text3}</span>
                     </div>
                 </div>
             </div>
