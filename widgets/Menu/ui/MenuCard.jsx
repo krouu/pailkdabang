@@ -12,11 +12,13 @@ const MenuCard = ({imgSrc, title, comment, ingredient}) => {
                     <div className="w-7 border-b-2 border-black"/>
                     <p className="text-sm">{comment}</p>
                 </div>
-                <div className="text-sm">
-                    <p>※ 1회 제공량 기준 : 24oz</p>
-                    <Ingredient {...ingredient} />
-                    <p className="text-xs">(매장 상황에 따라 판매하지 않을 수 있습니다.)</p>
-                </div>
+                {ingredient && (
+                    <div className="text-sm">
+                        <p>※ 1회 제공량 기준 : 24oz</p>
+                        <Ingredient {...ingredient} />
+                        <p className="text-xs">(매장 상황에 따라 판매하지 않을 수 있습니다.)</p>
+                    </div>
+                )}
             </div>
         </div>
     );

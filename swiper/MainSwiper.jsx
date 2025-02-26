@@ -15,7 +15,7 @@ const MainSwiper = () => {
                 loop={true}
                 autoplay={{ delay: 5000, disableOnInteraction: false }}
             >
-                {constants.map((v,i)=> (
+                {constants.main.map((v,i)=> (
                     <SwiperSlide key={i}>
                         <img src={v} alt="" />
                     </SwiperSlide>
