@@ -3,7 +3,7 @@ import { Pagination, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { constants } from './data/constants';
+import { swiperData } from './data/constants';
 
 const MainSwiper = () => {
     return (  
@@ -15,7 +15,7 @@ const MainSwiper = () => {
                 loop={true}
                 autoplay={{ delay: 5000, disableOnInteraction: false }}
             >
-                {constants.main.map((v,i)=> (
+                {swiperData.main.map((v,i)=> (
                     <SwiperSlide key={i}>
                         <img src={v} alt="" />
                     </SwiperSlide>
